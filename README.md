@@ -45,3 +45,31 @@ module.exports = {
   }
 }
 ```
+
+# Loaders
+Require the style-loader and css-loader dependencies
+
+```jsx
+const path = require('path')
+const cssFiles = /\.css$/
+
+module.exports = {
+  entry: path.resolve(__dirname,'src/index.js'),
+  mode: 'production',
+  output: {
+    path: path.resolve(__dirname, 'dist'),
+    filename: 'bundle.js'
+  },
+  module: {
+    rules: [
+      {
+        test: cssFiles,
+        use: [
+          'style-loader',
+          'css-loader'
+        ]
+      }
+    ]
+  }
+}
+```
