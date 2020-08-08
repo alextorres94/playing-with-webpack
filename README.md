@@ -1,6 +1,6 @@
-# Playing with Webpack 🤙
+# 🤙 Playing with Webpack
 
-## Building 🔨
+## 🔨 Building
 
 ### Manually
 
@@ -9,7 +9,6 @@ npx webpack --entry ./index.js --output ./bundle.js —mode production
 ```
 
 ### With package.json
-
 ```jsx
 "scripts": {
     "build": "webpack"
@@ -30,8 +29,7 @@ module.exports = {
 }
 ```
 
-## Multiple entry points 🔀
-
+## 🔀 Multiple entry points
 ```jsx
 module.exports = {
   entry: {
@@ -46,7 +44,7 @@ module.exports = {
 }
 ```
 
-# Loaders
+## 🌈 CSS Loaders
 Require the style-loader and css-loader dependencies
 
 ```jsx
