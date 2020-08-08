@@ -1,0 +1,12 @@
+{
+  "name": "Playing-with-webpack",
+  "version": "1.0.0",
+  "description": "Playing with webpack",
+  "scripts": {
+    "build:prod": "webpack --config ./production/webpack.config.js",
+    "build:develop": "webpack --config ./development/webpack.config.js",
+    "build:multi": "webpack --config ./multi-entry-point/webpack.config.js"
+  },
+  "author": "🤙",
+  "license": "ISC"
+}
