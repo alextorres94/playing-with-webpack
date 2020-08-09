@@ -71,3 +71,8 @@ module.exports = {
   }
 }
 ```
+
+## 🔌 Plugins
+[mini-css-extract-plugin](https://github.com/webpack-contrib/mini-css-extract-plugin)
+
+[html-webpack-plugin](https://github.com/jantimon/html-webpack-plugin)
