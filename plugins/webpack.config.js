@@ -2,19 +2,19 @@ const path = require('path')
 const MiniCSSExtractPlugin = require('mini-css-extract-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 
+const cssExtension = /\.css$/
+
 module.exports = {
-  entry: {
-    home: path.resolve(__dirname,'src/index.js'),
-  },
+  entry: path.resolve(__dirname,'src/index.js'),
   mode: 'development',
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: '[name].js'
+    filename: 'index.js'
   },
   module: {
     rules: [
       {
-        test: /\.css$/,
+        test: cssExtension,
         use: [
           {
             loader: MiniCSSExtractPlugin.loader
